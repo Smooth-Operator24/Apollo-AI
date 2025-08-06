@@ -8,7 +8,8 @@ document.getElementById('send-button').addEventListener('click', async function 
   userInputElement.value = '';
 
   try {
-    const response = await fetch('https://apollo-ai-backend.onrender.com/api/ask', {
+    const response = await fetch('https://your-backend.up.railway.app/api/ask', { 
+ {
   // ✅ Updated endpoint
       method: 'POST',
       headers: {
@@ -34,4 +35,5 @@ function addMessage(sender, text) {
   chatBox.appendChild(message);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
 
